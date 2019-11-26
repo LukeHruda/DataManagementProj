@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 17, 2019 at 06:54 PM
+-- Generation Time: Nov 26, 2019 at 02:52 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -110,6 +110,53 @@ INSERT INTO `engineers` (`engID`, `engFname`, `engLname`, `YearsExperience`, `Tr
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `jokes`
+--
+
+DROP TABLE IF EXISTS `jokes`;
+CREATE TABLE IF NOT EXISTS `jokes` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `text` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `jokes`
+--
+
+INSERT INTO `jokes` (`ID`, `text`) VALUES
+(4, 'What do you call someone with no nose? Nobody knows.'),
+(5, 'I used to hate facial hair, but then it grew on me.'),
+(6, 'Why did the man run around his bed? Because he was trying to catch up on his sleep!'),
+(7, 'What did one snowman say to the other snow man? Do you smell carrot?'),
+(8, 'How can you tell a vampire has a cold? They start coffin.'),
+(9, 'A Skeleton walked into a bar he said I need a beer and a mop'),
+(10, 'Is there a hole in your shoe? Noâ€¦ Then howâ€™d you get your foot in it?'),
+(11, 'Did you hear that the police have a warrant out on a midget psychic ripping people off? It reads â€œSmall medium at large.â€'),
+(12, 'People are making apocalypse jokes like thereâ€™s no tomorrow.'),
+(13, 'Iâ€™ve just been reading a book about anti-gravity, itâ€™s impossible to put down!'),
+(14, 'A magician was driving down the street and then he turned into a driveway.'),
+(15, 'How many tickles does it take to tickle an octopus? Ten-tickles!'),
+(16, 'Why are pirates called pirates? Because they arrr!'),
+(17, 'What do you call a guy lying on your doorstep? Matt.'),
+(18, 'Two peanuts were walking down the street. One was a salted.'),
+(19, 'How many bones are in the human hand? A handful of them.'),
+(20, 'What kind of pants do ghosts wear? Boo jeans.'),
+(21, 'Did you hear about the guy who invented Lifesavers? They say he made a mint.'),
+(22, 'Atheism is a non-prophet organisation.'),
+(23, 'How many bones are in the human hand? A handful of them.'),
+(24, 'The other day I was listening to a song about superglue, itâ€™s been stuck in my head ever since.'),
+(25, 'I used to be a banker, but I lost interest.'),
+(26, 'Yesterday a clown held a door open for me. I thought it was a nice jester.'),
+(27, 'I knew a guy who collected candy canes, they were all in mint condition'),
+(28, 'Every night at 11:11, I make a wish that someone will come fix my broken clock.'),
+(29, 'I needed a password eight characters long so I picked Snow White and the Seven Dwarfs.'),
+(30, 'What do you get when you cross a rabbit with a water hose? Hare spray.'),
+(31, 'Iâ€™m on a whiskey diet. Iâ€™ve lost three days already.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `passengers`
 --
 
@@ -153,6 +200,35 @@ INSERT INTO `passengers` (`ID`, `Fname`, `Lname`, `Address`, `DepartureTo`, `Dep
 (20, 'Emily', 'Scotts', '873 Lovingston Cres Mississauga ON L4W 3S6', 1, 10),
 (21, 'Julius', 'Caesar', '46 Compton Dr Scarborough ON M1R 4A7', 1, 3),
 (22, 'Lenny', 'Lampshade', '100 Aird Pl 410 Kanata ON K2L 4H8', 12, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pictures`
+--
+
+DROP TABLE IF EXISTS `pictures`;
+CREATE TABLE IF NOT EXISTS `pictures` (
+  `id` int(10) NOT NULL,
+  `author` varchar(255) NOT NULL,
+  `width` int(10) NOT NULL,
+  `height` int(10) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `download_url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pictures`
+--
+
+INSERT INTO `pictures` (`id`, `author`, `width`, `height`, `url`, `download_url`) VALUES
+(119, 'Nadir Balcikli', 3264, 2176, 'https://unsplash.com/photos/wE9nUW7tMmk', 'https://picsum.photos/id/119/3264/2176'),
+(12, 'Paul Jarvis', 2500, 1667, 'https://unsplash.com/photos/I_9ILwtsl_k', 'https://picsum.photos/id/12/2500/1667'),
+(120, 'Guillaume', 4928, 3264, 'https://unsplash.com/photos/_DA3D5P71qs', 'https://picsum.photos/id/120/4928/3264'),
+(121, 'Radio Pink', 1600, 1067, 'https://unsplash.com/photos/p-bkdO43shE', 'https://picsum.photos/id/121/1600/1067'),
+(122, 'Vadim Sherbakov', 4147, 2756, 'https://unsplash.com/photos/xS_RzdD5CFE', 'https://picsum.photos/id/122/4147/2756'),
+(123, 'Mark Doda', 4928, 3264, 'https://unsplash.com/photos/tS9hJOnmKK8', 'https://picsum.photos/id/123/4928/3264');
 
 -- --------------------------------------------------------
 
