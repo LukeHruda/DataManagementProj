@@ -1,10 +1,11 @@
 {
-    "attachments": 
+    "attachments": [
         {
-            "fallback": "They tried to make a diamond shaped like a duck. It quacked under the pressure.",
-            "footer": "<https:\/\/icanhazdadjoke.com\/j\/9hiGeNZ0Tnb|permalink> - <https:\/\/icanhazdadjoke.com|icanhazdadjoke.com>",
-            "text": "They tried to make a diamond shaped like a duck. It quacked under the pressure.",
+            "fallback": "I\u2019m on a whiskey diet. I\u2019ve lost three days already.",
+            "footer": "<https:\/\/icanhazdadjoke.com\/j\/vXgNZ0wcxAd|permalink> - <https:\/\/icanhazdadjoke.com|icanhazdadjoke.com>",
+            "text": "I\u2019m on a whiskey diet. I\u2019ve lost three days already."
         }
+    ],
     "response_type": "in_channel",
     "username": "icanhazdadjoke"
 }
