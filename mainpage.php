@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Some nice photos :)</title>
+	<title>Jokes Anyone?</title>
 	<link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
+<p id="title"> Can we start you off with a joke? </p>
 <?php
 $response = file_get_contents('https://icanhazdadjoke.com/slack');
 $arr_data = json_decode($response, true);
@@ -32,12 +33,15 @@ if($result-> num_rows > 0)
 {
 	while($row = $result-> fetch_assoc())
 	{
+		echo '<div id="d01">';
 		echo '<p id="p01">';
 		echo $row['text'];
-		echo '</p>';
+		echo '</p">';
+		echo '</div>';
 	}
 }
 ?>
-
-<p class="p02"><a href="views.php">Our Views!</a></p>
-<p class="p02"><a href="pictures.php">The Picture API</a></p>
+<div id="d02">
+	<p class="p02"><a href="views.php">Our Views!</a></p>
+	<p class="p02"><a href="pictures.php">The Picture API</a></p>
+</div>
