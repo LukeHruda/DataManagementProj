@@ -1,3 +1,13 @@
+<html>
+<head>
+	<title>City Weather</title>
+	<link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div id="p01">
+<div id="main">
 <?php
 	$location = $_GET["Cities"];
 
@@ -9,5 +19,16 @@
 	$weather = $response["main"]["temp"] - $kelvin;
 	if($weather > 0 && $weather < 1) 
 			$weather = 1;
-	echo "<h1>The weather in ".$response["name"]." is currently ".$weather." degrees. Conditions: ".$response['weather'][0]['main'].".</h4>";
+	echo "<h4>The weather in ".$response["name"]." is currently ".$weather." degrees. Conditions: ".$response['weather'][0]['main'].".</h4>";
 ?>
+</div>
+</div>
+
+<div id="links">
+	<div id="bgc">
+		<p id="pg2"><a href="weather.php">Return to Main Page</a></p>
+	</div>
+</div>
+
+</body>
+</html>

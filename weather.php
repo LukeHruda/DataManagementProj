@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Some nice photos :)</title>
-	<link href="views.css" rel="stylesheet" type="text/css"/>
+	<title>City Weather</title>
+	<link href="main.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>	
@@ -17,6 +17,8 @@ $sql = "SELECT City FROM Station";
 $result = $conn->query($sql);
 ?>
 
+<div id="p01">
+<div id="main">
 <h1>Select a city:</h1>
 <form name="citySelect" action="weatherResults.php" method="GET	">
 <select name="Cities"> 
@@ -28,3 +30,16 @@ while($row = $result->fetch_array()) {
 </select>
 <input type="submit" value="Submit"/>
 </form>
+</div>
+</div>
+
+<div id="links">
+	<div id="bgc">
+		<p class="p02"><a href="views.php">Our Views!</a></p>
+		<p class="p02"><a href="pictures.php">The Picture API</a></p>
+	</div>
+</div>
+
+
+</body>
+</html>
