@@ -5,7 +5,7 @@
 	<link href="views.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
+<body>	
 <?php
 $servername = "localhost";
 $username = "root";
@@ -15,7 +15,7 @@ $conn = new mysqli($servername, $username, $password, $dbname) or die ("NOEP");
 $list = '';
 $sql = "SELECT City FROM Station";
 $result = $conn->query($sql);
-?> 
+?>
 
 <h1>Select a city:</h1>
 <form name="citySelect" action="weatherResults.php" method="GET	">
