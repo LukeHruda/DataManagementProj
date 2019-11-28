@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Some nice photos :)</title>
-	<link href="views.css" rel="stylesheet" type="text/css"/>
+	<link href="photos.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -25,9 +25,9 @@ VALUES ('.$arr_data[$i]['id'].', "'.$arr_data[$i]['author'].'", '.$arr_data[$i][
 '.$arr_data[$i]['height'].', "'.$arr_data[$i]['url'].'", "'.$arr_data[$i]['download_url'].'")';
 $conn->query($sql);
 } ?>
-
+<div id="try">
 <table class="t1">
-	<caption>Here are some pictures</caption>
+	<caption id="titles">Here are some pictures</caption>
 <?php
 $sql = "SELECT author, download_url FROM Pictures";
 $result = $conn-> query($sql);
@@ -36,7 +36,7 @@ if($result-> num_rows > 0)
 	while($row = $result-> fetch_assoc())
 	{
 		echo '<tr><th>';
-		echo '<img src="'.$row['download_url'].'" width=200 height=200 alt="icon" /><br>';
+		echo '<img src="'.$row['download_url'].'" width=310 height=175 alt="icon"" /><br>';
 		echo 'Author: '.$row['author'].'';
 		echo '</tr></th>';
 		}
@@ -44,4 +44,5 @@ if($result-> num_rows > 0)
 	$conn-> close();
 ?>
 </table>
+</div>
 </body>

@@ -1,0 +1,39 @@
+table.t1 {
+margin: 0 auto;
+border-collapse: separate;
+border-spacing: 10px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20px;
+}
+.t1 th, .t1 td {
+	background-image: url("frame.jpg");
+ 	background-position: center;
+    background-repeat: no-repeat;
+	background-size: contain;
+	height: 300px;
+    width: 400px
+}
+
+.t1 tbody th, .t1 tbody tr:nth-child(odd) td {
+	margin-top: 100px;
+	padding: 0px;
+}
+
+#titles{
+	font-family: Apple Chancery, cursive;
+	color: white;
+	font-size: 30px;
+}	
+
+#try{
+	border: 15px solid black;
+	width: 700px;
+	margin: 0 auto;
+}	
+
+html{
+	background-image: url("wallpaper.jpg");
+ 	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
