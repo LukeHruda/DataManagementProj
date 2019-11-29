@@ -37,6 +37,7 @@ while($row = $result->fetch_array()) {
 	<div id="bgc">
 		<p class="p02"><a href="views.php">Our Views!</a></p>
 		<p class="p02"><a href="pictures.php">The Picture API</a></p>
+				<p class="p02"><a href="trainRegister.php">Register</a></p>
 	</div>
 </div>
 
