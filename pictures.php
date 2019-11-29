@@ -45,4 +45,9 @@ if($result-> num_rows > 0)
 ?>
 </table>
 </div>
+<div id="links">
+	<div id="bgc">
+		<p id="pg2"><a href="weather.php">Return to Main Page</a></p>
+	</div>
+</div>
 </body>

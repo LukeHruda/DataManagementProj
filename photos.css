@@ -37,3 +37,30 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#links{
+	height: 100px;
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 15px;
+	padding: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: black;
+	border: 5px solid blue;
+	background-color: white;
+}
+
+#bgc{
+	margin: 0 auto;
+	margin-top: 0px;
+	height: 90px;
+	width: 175px;
+	padding: 3px;
+	background-color: white;
+}	
+
+#pg2{
+	margin-top: 30px;
+	background-color: white;
+}

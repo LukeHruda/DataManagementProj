@@ -392,5 +392,10 @@ SELECT engFname, engLname from engineers";
 	}
 	$conn-> close();
 ?>
+<div id="links">
+	<div id="bgc">
+		<p id="pg2"><a href="weather.php">Return to Main Page</a></p>
+	</div>
+</div>
 </body>
 </html>
